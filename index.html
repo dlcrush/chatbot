@@ -1,35 +1,41 @@
 <!doctype html>
 <html>
 <head>
-<!-- Stylesheets -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 
-<title>Chat Bot</title>
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/chatbot.css">
+
+	<title>Chat Bot</title>
 </head>
 <body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1>Chat Bot</h1>
 
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-lg-12">
-			<h1>Chat Bot</h1>
+				<div class="chat-container">
+				</div>
 
-			<div class="chat-container">
-				<p><b>Me:</b> I milked your cow for you.</p>
-				<p><b>Bot:</b> We don't have a cow, we have a bull.</p>
-			</div>
-
-			<div>
-				<input type="text">
-				<input type="submit">
+				<div>
+					<form id="chat-form" class="form-inline" role="form">
+						<input type="hidden" name="bot_output" id="bot_output">
+						<div class="form-group">
+							<input type="text" name="user_input" id="user_input" class="input-lg form-control">
+						</div>
+						<div class="form-group">
+							<input type="submit" class="btn btn-primary btn-lg" value="Chat">
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-
-<!-- Scripts -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<script src="js/chatbot.js"></script>
+	
+	<!-- Scripts -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="js/chatbot.js"></script>
 </body>
 </html>
